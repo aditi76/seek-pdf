@@ -1,7 +1,7 @@
 # Seek-PDF-PWA
 Seek PDF is a progressive web app that gives you information about trending technologies.
 #### You can visit the website using the following link,
-Link - https://savanismit.github.io/Seek-PDF-PWA/
+Link - https://aditi76.github.io/seek-pdf/
 
 #### Languages used:-
 * Html  
