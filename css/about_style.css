@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Oswald:wght@300&family=Raleway&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/*********************************
+1. General
+*********************************/
+*{
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+.html
+{
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+}
+
+.body{
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*********************************
+2. Team Card Section
+*********************************/
+
+section{
+	padding: 1rem 5rem;
+	background-color: #fff;
+	background-image:url('../img/team_background.jpg');
+}
+
+.heading{
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 3px;
+	margin-right: -3px;
+	margin-bottom: 3rem;
+	text-align: center;
+	color: #333;
+	position: relative;
+}
+
+.heading::after{
+	content: "";
+	width: 10rem;
+	height: .6rem;
+	background-color: #45e19f;
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 2rem;
+}
+
+.card-wrapper{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.card{
+	width: 50%;
+	background-color: #eeeded;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin: 2rem 0;
+	box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);	
+}
+
+.card .card-img{
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
+}
+
+.profile-img{
+	width: 10rem;
+	height: 11rem;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: -10rem;
+	z-index: 999;
+	border: .3rem solid white;
+}
+
+.card h1{
+	font-size: 2rem;
+	color: #333;
+	margin: 0 0;
+	font-family: Roboto;
+	text-align: center;
+}
+
+.card-body .word-done{
+	color: #777;
+	font-size: 1rem;
+	font-weight: 300;
+	margin-bottom: 1%;
+}
+
+.about{
+	font-size: .9rem;
+	font-style: italic;
+	text-align: center;
+	color: #333;
+	margin: .3rem 0;
+}
+
+.social-media{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	padding: .2rem 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-media i{
+	font-size: 2rem;
+	margin-top: .7rem;
+	transition: color .3s;
+}
+
+.fa-github{
+	color: #211F1F;
+}
+
+.fa-instagram
+{
+	color: #fb3958;
+}
+
+.fa-linkedin{
+	color: #0e76a8;
+}
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover{
+	color: #45e19f;
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+	.profile-img{
+		width: 9rem;
+		height: 10rem;
+	}
+	.card .card-wrapper{
+		align-content: center;
+		text-align: center;
+		justify-content: center;
+	}
+	.card{
+		width: 100%;
+	}
+	.intro .slogan h2{
+		font-size: 50px;
+	}
+	.intro .slogan h4{
+		font-size: 12.5px;
+	}
+	.heading{
+	margin-top: 15%;
+	}
+	
+  }
+
+@media (min-width: 577px) and (max-width: 777px) {
+.profile-img{
+	width: 9rem;
+	height: 10rem;
+}
+.intro .slogan h2{
+	font-size: 75px;
+}
+.intro .slogan h4{
+	font-size: 20px;
+}
+.heading{
+	margin-top: 15%;
+}
+}
+
+@media (min-width: 992px)
+{
+.profile-img{
+	width: 11rem;
+	height: 12rem;
+}
+} 
+  
+  @keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}	
+.card:nth-child(1){
+	animation: fadeIn .5s .3s backwards;
+}
+.card:nth-child(2){
+	animation: fadeIn .5s 0.6s backwards;
+}
+.card:nth-child(3){
+	animation: fadeIn .5s 0.9s backwards;
+}
+.card:hover{
+	transform: scale(1.05)
+}
