@@ -7,7 +7,7 @@ Link - https://aditi76.github.io/seek-pdf/
 * Html  
 * CSS   
 * Bootstrap4
-* JavaScript
+*  Vanilla JavaScript
 * Jquery
  
 ### Screenshots
